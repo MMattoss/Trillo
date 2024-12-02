@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                Header part
-            </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-            <div class="content">
-                <nav class="sidebar">
-                    Navigation
-                </nav>
-                <main class="hotel-view">
-                    hotel-view
-                </main>
-            </div>
-        </div>
-    </body>
+		<title>trillo &mdash; Your all-in-one booking app</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+        <img src="img/logo.png" alt="Trillo logo" class="logo">
+
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search hotels">
+          <button class="search__button">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <i class="user-nav__icon fa-solid fa-bookmark"></i>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <i class="user-nav__icon fa-solid fa-comments"></i>
+            <span class="user-nav__notification">13</span>
+          </div>
+
+          <div class="user-nav__user">
+            <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
+            <span class="user-nav__user-name">Jonas</span>
+          </div>
+        </nav>
+      </header>
+
+			<div class="content">
+				<nav class="sidebar">Navigation</nav>
+				<main class="hotel-view">hotel-view</main>
+			</div>
+		</div>
+	</body>
 </html>
